@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="theme">
+    <div class="container">
+        <div class="header flex">
+            <img src="../images/logo-placeholder.png" alt="HyperNotes Logo">
+            <h1>HyperNotes</h1>
+        </div>
+
+        <!-- <div class="tabs">
+            <button class="tab unselected" id="allNotes">All Notes</button>
+            <button class="tab selected" id="myNotes">My Notes</button>
+        </div> -->
+        
+        <div class="contentField">
+            <textarea id="noteContent" placeholder="Enter content here..." cols="43"></textarea>
+        </div>
+
+        <div class="dropdown">
+            <div class="dropdown-select" id="dropdown-field">
+                Select Groups
+                <span>
+                    <i class="bi bi-caret-down-fill"></i>
+                </span>
+            </div>
+            <div class="dropdown-list" id="groups" style="display:none;"></div>
+        </div>
+          
+        <div class="footer-buttons flex">
+            <button class="primary" id="submitBtn">Submit</button>
+            <button class="secondary" id="cancelBtn">Cancel</button>
+        </div>
+        
+    </div>
+
+    <script src="../jsScripts/content.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+{
+  "name": "HyperNotes",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "./html/login.html",
+    "default_icon": "./images/logo-placeholder.png"
+  },
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "storage"
+  ],
+  "background": {
+    "scripts": ["./jsScripts/background.js"],
+    "service_worker": "./jsScripts/background.js"
+  }
+}

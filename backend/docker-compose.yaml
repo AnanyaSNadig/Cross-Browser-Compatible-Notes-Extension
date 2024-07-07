@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  django:
+    image: django_python
+    volumes:
+      - .:/usr/src/app/
+    ports:
+      - "8000:8000" 
+    depends_on:
+      - mysql
+  mysql:
+    image: mysql
+    env_file:
+      - configuration.env
+    ports:
+      - "3306:3306" 
