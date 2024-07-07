@@ -72,11 +72,11 @@ The frontend includes:
   
 * jsScripts: Contains three JavaScript files:
 
-- content.js: Main script with functions for different event listener actions.
+  - content.js: Main script with functions for different event listener actions.
 
-- background.js: Determines which HTML page (login page or list of notes) to render based on user login information.
+  - background.js: Determines which HTML page (login page or list of notes) to render based on user login information.
 
-- config.js: Contains the API URL used for making backend API calls.
+  - config.js: Contains the API URL used for making backend API calls.
 
 * manifest.json: Specifies the version of the manifest and other extension details.
 
